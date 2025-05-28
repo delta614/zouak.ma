@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZOUAK.ma - Custom Laser-Cut Wood Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f4f1;
+      color: #333;
+    }
+    header {
+      background: url('https://i.pinimg.com/1200x/9a/6c/91/9a6c91c541ad769b69456fc4646e9e36.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header > div {
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      color: #ffcc99;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      color: #ffe6cc;
+    }
+    header a {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #a86c3f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      z-index: 1;
+    }
+    header a:hover {
+      background-color: #8a5430;
+      transform: scale(1.05);
+    }
+
+    /* Social Icons vertical bar */
+    .social-icons {
+      position: fixed;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 28px;
+      color: #ffcc99;
+      z-index: 9999;
+    }
+    .social-icons a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #a86c3f;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #a86c3f;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service, .project {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .service:hover, .project:hover {
+      transform: translateY(-5px);
+    }
+    .service {
+      background-image: linear-gradient(to bottom right, #fcebd5, #fff);
+    }
+    .project {
+      background-image: linear-gradient(to bottom right, #f5f5f5, #fff);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 12px 24px;
+      background-color: #a86c3f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #8a5430;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>ZOUAK.ma</h1>
+      <h2>zwe9 bdo9ek</h2>
+      <a href="#about">Get a Quote</a>
+    </div>
+  </header>
+
+  <div class="social-icons" aria-label="Social media and contact links">
+    <a href="https://instagram.com/zouak.ma" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="tel:+212694498690" aria-label="Call phone number">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="mailto:badr.eladibi@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://facebook.com/zouak.ma" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/zouakma" target="_blank" aria-label="X Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://threads.net/zouakma" target="_blank" aria-label="Threads">
+      <i class="fab fa-facebook-messenger"></i>
+    </a>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      At ZWAK.ma, we turn wood into custom, laser-cut creations with precision and care. What began as a passion for craftsmanship has grown into a small business focused on quality, creativity, and personal touches.<br>
+      From personalized gifts to detailed signs, we bring your ideas to life—one cut at a time.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Custom Signs</h3>
+        <p>Personalized signs for homes, businesses, and special occasions.</p>
+      </div>
+      <div class="service">
+        <h3>Personalized Gifts</h3>
+        <p>Unique wood gifts with names, messages, or special dates.</p>
+      </div>
+      <div class="service">
+        <h3>Engraved Decor</h3>
+        <p>Decorative pieces for interior spaces, events, or branding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="project">
+        <img src="https://i.etsystatic.com/17379512/r/il/91a81e/6736761084/il_1588xN.6736761084_gfik.jpg" alt="Project 1" />
+        <p>Custom wooden or other materials logo design.</p>
+      </div>
+      <div class="project">
+        <img src="https://www.pdsigns.ie/contentFiles/productImages/Large/Metal%20Marking%20QR%20Code%20Tags.jpg" alt="Project 2" />
+        <p>Laser engraved signs.</p>
+      </div>
+      <div class="project">
+        <img src="https://fbi.cults3d.com/uploaders/38968887/illustration-file/42e03c1e-246d-4b11-b46b-85e48d09353b/5-01.jpg" alt="Project 3" />
+        <p>Customized wall decor and art.</p>
+      </div>
+      <div class="project">
+        <img src="https://yellowtruckdesign.com/cdn/shop/files/il_fullxfull.5900656656_fw2k.jpg?" alt="Project 4" />
+        <p>Custom name plaques cut or engraved.</p>
+      </div>
+      <div class="project">
+        <img src="https://swiftsigns.com.au/wp-content/uploads/2024/01/Support-Local-Business-Sign-1024x683.jpg" alt="Project 5" />
+        <p>Business branding signs.</p>
+      </div>
+      <div class="project">
+        <img src="https://feeldis.com/wp-content/uploads/2024/07/DALL%C2%B7E-2024-07-11-22.00.53-A-beautifully-arranged-display-of-unique-wooden-gift-items-including-intricately-carved-wooden-boxes-personalized-wooden-plaques-stylish-wooden-uten.webp" alt="Project 6" />
+        <p>Wooden decorative pieces or functional items or gifts with custom design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ZOUAK.ma. All rights reserved.</p>
+  </footer>
+</body>
+</html>
